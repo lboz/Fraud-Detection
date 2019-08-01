@@ -1,9 +1,11 @@
 # Fraud-Detection
-fraud detection from customer transactions
+Fraud detection from customer transactions
 
 Source: https://www.kaggle.com/c/ieee-fraud-detection
+
 Dataset provided by Vesta Corporation
 
+### Project Description - source: kaggle.com
 Imagine standing at the check-out counter at the grocery store with a long line behind you and the cashier not-so-quietly announces that your card has been declined. In this moment, you probably aren’t thinking about the data science that determined your fate.
 
 Embarrassed, and certain you have the funds to cover everything needed for an epic nacho party for 50 of your closest friends, you try your card again. Same result. As you step aside and allow the cashier to tend to the next customer, you receive a text message from your bank. “Press 1 if you really tried to spend $500 on cheddar cheese.”
@@ -18,3 +20,29 @@ If successful, you’ll improve the efficacy of fraudulent transaction alerts fo
 
 Acknowledgements:
 Vesta Corporation provided the dataset for this competition. Vesta Corporation is the forerunner in guaranteed e-commerce payment solutions. Founded in 1995, Vesta pioneered the process of fully guaranteed card-not-present (CNP) payment transactions for the telecommunications industry. Since then, Vesta has firmly expanded data science and machine learning capabilities across the globe and solidified its position as the leader in guaranteed ecommerce payments. Today, Vesta guarantees more than $18B in transactions annually. 
+
+### Data Description
+Predicting the probability that an online transaction is fraudulent, as denoted by the binary target isFraud.
+
+The data is broken into two files identity and transaction, which are joined by TransactionID. Not all transactions have corresponding identity information.
+
+Categorical Features - Transaction
+
+    ProductCD
+    card1 - card6
+    addr1, addr2
+    P_emaildomain
+    R_emaildomain
+    M1 - M9
+
+Categorical Features - Identity
+
+    DeviceType
+    DeviceInfo
+    id_12 - id_38
+
+The TransactionDT feature is a timedelta from a given reference datetime (not an actual timestamp).
+
+
+
+
